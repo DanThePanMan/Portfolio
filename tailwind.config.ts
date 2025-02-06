@@ -24,6 +24,7 @@ export default {
         extend: {
             animation: {
                 move: "move 5s linear infinite",
+                aurora: "aurora 60s linear infinite",
             },
             keyframes: {
                 move: {

@@ -1,14 +1,46 @@
+"use client";
 import AboutMe from "./components/AboutMe";
-import CursorDot from "./components/CursorDot";
+import Button from "./components/Button";
 import { FadeIn } from "./components/FadeIn";
 import { HeroHighlight } from "./components/HeroHighlight";
 import { TechCard } from "./components/TechCard";
 import { TitleCard } from "./components/TitleCard";
 import { TitleToBody } from "./components/TitleToBody";
+import { motion, AnimatePresence } from "framer-motion";
+
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [showIntro, setShowIntro] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowIntro(false);
+        }, 2000); // Animation will last 2 seconds
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <>
+            <AnimatePresence>
+                {showIntro && (
+                    <motion.div
+                        initial={{ opacity: 1 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        className="fixed inset-0 bg-black z-50 flex items-center justify-center pointer-events-none">
+                        <motion.h1
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-6xl font-bold text-white">
+                            todo: make this actually cool somehow
+                        </motion.h1>
+                    </motion.div>
+                )}
+            </AnimatePresence>
             <HeroHighlight className="h-screen flex items-center justify-center">
                 <FadeIn>
                     <TitleCard />
@@ -33,9 +65,10 @@ export default function Home() {
                     <AboutMe />
                 </FadeIn>
                 <FadeIn>
-                    <button className="bg-blue-500 text-white dark:bg-white dark:text-black rounded-2xl px-8 py-5 hover:opacity-65 transition-all ease-in-out duration-300 text-sm font-semibold">
-                        Get In Touch
-                    </button>
+                    <Button
+                        text="Contact Me"
+                        onClick={() => console.log("clicked")}
+                    />
                 </FadeIn>
             </div>
             <div className="h-screen flex flex-row justify-center">
