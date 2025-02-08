@@ -1,9 +1,7 @@
 "use client";
 import AboutMe from "./components/AboutMe";
-import Button from "./components/Button";
 import { FadeIn } from "./components/FadeIn";
 import { HeroHighlight } from "./components/HeroHighlight";
-import { TechCard } from "./components/TechCard";
 import { TitleCard } from "./components/TitleCard";
 import { TitleToBody } from "./components/TitleToBody";
 import { motion, AnimatePresence } from "framer-motion";
@@ -60,20 +58,9 @@ export default function Home() {
                 </svg>
             </FadeIn>
             <TitleToBody />
-            <div className="p-32 flex flex-col justify-start items-center">
+            <div className="p-32 flex flex-col justify-start items-center w-[100%]">
                 <FadeIn>
                     <AboutMe />
-                </FadeIn>
-                <FadeIn>
-                    <Button
-                        text="Contact Me"
-                        onClick={() => console.log("clicked")}
-                    />
-                </FadeIn>
-            </div>
-            <div className="h-screen flex flex-row justify-center">
-                <FadeIn>
-                    <TechCard>asdfasdf</TechCard>
                 </FadeIn>
             </div>
         </>

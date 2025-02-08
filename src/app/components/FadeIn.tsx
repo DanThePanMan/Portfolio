@@ -13,6 +13,7 @@ export const FadeIn = ({ children, delay = 0.1 }: FadeInProps) => {
 
     return (
         <motion.div
+            className="flex flex-row justify-center items-center"
             ref={ref}
             initial={{ opacity: 0 }}
             animate={{ opacity: inView ? 1 : 0 }}
