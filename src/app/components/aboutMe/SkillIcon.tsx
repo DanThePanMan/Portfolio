@@ -1,5 +1,5 @@
 import { Tooltip } from "react-tooltip";
-import { cn } from "../../utils/utils";
+import { cn } from "../../../utils/utils";
 import { ReactNode } from "react";
 
 interface SkillIconProps {
@@ -23,7 +23,7 @@ export default function SkillIcon({
             <div
                 data-tooltip-id={id}
                 className={cn(
-                    "shadow-md p-2 bg-[#67bb4a50] rounded-xl flex justify-center items-center",
+                    "shadow-md p-1 bg-[#67bb4a50] rounded-xl flex justify-center items-center h-10 w-10",
                     className
                 )}>
                 {children}

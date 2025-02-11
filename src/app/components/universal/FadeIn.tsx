@@ -13,7 +13,7 @@ export const FadeIn = ({ children, delay = 0.1 }: FadeInProps) => {
 
     return (
         <motion.div
-            className="flex flex-row justify-center items-center"
+            className="flex flex-row justify-center items-center flex-grow self-stretch delay-75"
             ref={ref}
             initial={{ opacity: 0 }}
             animate={{ opacity: inView ? 1 : 0 }}

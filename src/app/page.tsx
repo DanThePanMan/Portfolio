@@ -1,8 +1,8 @@
 "use client";
-import AboutMe from "./components/AboutMe";
-import { FadeIn } from "./components/FadeIn";
-import { HeroHighlight } from "./components/HeroHighlight";
-import { TitleCard } from "./components/TitleCard";
+import AboutMe from "./components/aboutMe/AboutMe";
+import { FadeIn } from "./components/universal/FadeIn";
+import { HeroHighlight } from "./components/HeroHighlight/HeroHighlight";
+import { TitleCard } from "./components/HeroHighlight/TitleCard";
 import { TitleToBody } from "./components/TitleToBody";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -59,9 +59,7 @@ export default function Home() {
             </FadeIn>
             <TitleToBody />
             <div className="p-32 flex flex-col justify-start items-center w-[100%]">
-                <FadeIn>
-                    <AboutMe />
-                </FadeIn>
+                <AboutMe />
             </div>
         </>
     );

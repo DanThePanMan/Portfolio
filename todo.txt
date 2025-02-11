@@ -1,0 +1,2 @@
+1. use delay and animate transform to make items in the side bar slide in one by one from the side.
+1. use delay and animate to add social media webstie icons below my name on the "im dan" page
