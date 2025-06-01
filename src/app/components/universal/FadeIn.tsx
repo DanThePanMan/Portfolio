@@ -6,14 +6,18 @@ import { useInView } from "react-intersection-observer";
 interface FadeInProps {
     children: ReactNode;
     delay?: number;
+    addedStyles?: string;
 }
 
-export const FadeIn = ({ children, delay = 0.1 }: FadeInProps) => {
+export const FadeIn = ({ children, delay = 0.1, addedStyles }: FadeInProps) => {
     const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
     return (
         <motion.div
-            className="flex flex-row justify-center items-center flex-grow self-stretch delay-75"
+            className={
+                "flex flex-row justify-center items-center delay-75" +
+                addedStyles
+            }
             ref={ref}
             initial={{ opacity: 0 }}
             animate={{ opacity: inView ? 1 : 0 }}

@@ -7,6 +7,7 @@ import { TitleToBody } from "./components/TitleToBody";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { useEffect, useState } from "react";
+import Sidebar from "./components/universal/Sidebar";
 
 export default function Home() {
     const [showIntro, setShowIntro] = useState(true);
@@ -21,6 +22,7 @@ export default function Home() {
 
     return (
         <>
+            <Sidebar />
             <AnimatePresence>
                 {showIntro && (
                     <motion.div
@@ -34,16 +36,18 @@ export default function Home() {
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
                             className="text-6xl font-bold text-white">
-                            todo: make this actually cool somehow
+                            Welcome to my space.
                         </motion.h1>
                     </motion.div>
                 )}
             </AnimatePresence>
-            <HeroHighlight className="h-screen flex items-center justify-center">
-                <FadeIn>
-                    <TitleCard />
-                </FadeIn>
-            </HeroHighlight>
+            <div id="home" className="scroll-mt-16">
+                <HeroHighlight className="h-screen flex items-center justify-center">
+                    <FadeIn>
+                        <TitleCard />
+                    </FadeIn>
+                </HeroHighlight>
+            </div>
             <FadeIn>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +62,9 @@ export default function Home() {
                 </svg>
             </FadeIn>
             <TitleToBody />
-            <div className="p-32 flex flex-col justify-start items-center w-[100%]">
+            <div
+                id="about"
+                className="p-32 flex flex-col justify-start items-center w-[100%] scroll-mt-16">
                 <AboutMe />
             </div>
         </>
