@@ -16,7 +16,13 @@ export const TitleCard = () => {
                 a{" "}
                 <FlipWords
                     className="font-bold text-7xl text-blue-500"
-                    words={["Front-end", "Back-end", "Full-stack", "Mobile"]}
+                    words={[
+                        "Front-end",
+                        "Back-end",
+                        "Full-stack",
+                        "Mobile",
+                        "Data Pipeline",
+                    ]}
                     duration={3000}></FlipWords>
                 Developer
             </h1>

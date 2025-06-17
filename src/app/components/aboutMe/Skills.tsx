@@ -19,7 +19,6 @@ import {
     WebpackOriginal,
     PostgresqlOriginal,
     PrismaOriginal,
-    VscodeOriginal,
     JestPlain,
     NpmOriginalWordmark,
     VitejsOriginal,
@@ -105,16 +104,16 @@ const Skills = () => {
                         <NextjsOriginal size="25" />
                     </SkillIcon>
                     <SkillIcon
+                        name="Prisma"
+                        id="prisma"
+                        className=" bg-[#222a3850]">
+                        <PrismaOriginal size="25" />
+                    </SkillIcon>
+                    <SkillIcon
                         name="Framer Motion"
                         id="framer"
                         className="transition-all bg-[#ffffff60] dark:bg-[#2d374850]">
                         <FramermotionOriginal size="25" />
-                    </SkillIcon>
-                    <SkillIcon
-                        name="Flask"
-                        id="Flask"
-                        className="transition-all bg-[#ffffff60] dark:bg-[#2d374850]">
-                        <FlaskOriginal size="25" />
                     </SkillIcon>
                 </TechCard>
             </FadeIn>
@@ -138,24 +137,14 @@ const Skills = () => {
                         className=" bg-[#5671a050]">
                         <PostgresqlOriginal size="25" />
                     </SkillIcon>
-                    <SkillIcon
-                        name="Prisma"
-                        id="prisma"
-                        className=" bg-[#222a3850]">
-                        <PrismaOriginal size="25" />
-                    </SkillIcon>
+
                     <SkillIcon
                         name="MongoDB"
                         id="mongo"
                         className="transition-all bg-[#82bb9360] dark:bg-[#2d483450]">
                         <MongodbOriginal size="25" />
                     </SkillIcon>
-                    <SkillIcon
-                        name="Vs code"
-                        id="vs"
-                        className="transition-all  bg-[#2d314850]">
-                        <VscodeOriginal size="25" />
-                    </SkillIcon>
+
                     <SkillIcon
                         name="Jest"
                         id="jest"
@@ -204,12 +193,12 @@ const Skills = () => {
                         </svg>
                     </SkillIcon>
                     <SkillIcon
-                        name="Snowflake"
-                        id="snowflake"
+                        name="Dagster"
+                        id="dagster"
                         className="transition-all  bg-[#6932e750]">
                         <svg
-                            width="560"
-                            height="560"
+                            width="32"
+                            height="32"
                             viewBox="0 0 560 560"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg">
