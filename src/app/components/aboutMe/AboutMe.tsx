@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Button from "../universal/Button";
 import Skills from "./Skills";
 import { FadeIn } from "../universal/FadeIn";
 
@@ -9,10 +8,10 @@ import { paragraphStyle } from "../../Styles/Styles";
 
 export default function AboutMe() {
     return (
-        <div className="flex flex-col justify-start items-center gap-16 w-full md:w-[70%] 2xl:w-[50%] mx-auto">
-            <div className="flex flex-col justify-start items-center gap-6 text-center">
+        <div className="flex flex-col justify-start items-center gap-12 lg:gap-16 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col justify-start items-center gap-4 sm:gap-6 text-center">
                 <FadeIn>
-                    <h1 className="text-6xl font-bold bg-gradient-to-t from-zinc-600 to-black dark:from-zinc-400 dark:to-white dark:text-transparent inline-block bg-clip-text">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-t from-zinc-600 to-black dark:from-zinc-400 dark:to-white dark:text-transparent inline-block bg-clip-text">
                         ABOUT ME
                     </h1>
                 </FadeIn>
@@ -20,14 +19,14 @@ export default function AboutMe() {
                     <div className="w-12 h-2 bg-blue-600 rounded-full"></div>
                 </FadeIn>
                 <FadeIn>
-                    <p className={textStyle}>
+                    <p className={`${textStyle} max-w-2xl`}>
                         Here you will find more information about me, including
                         what I do, and my skills
                     </p>
                 </FadeIn>
             </div>
-            <div className="flex flex-row justify-center items-start gap-6">
-                <div className="flex flex-col gap-8 items-start justify-start basis-[55%]">
+            <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-12 w-full">
+                <div className="flex flex-col gap-6 lg:gap-8 items-start justify-start w-full lg:basis-[55%]">
                     <FadeIn>
                         <h2 className={h2Style}>Get to know me!</h2>
                     </FadeIn>
@@ -61,14 +60,10 @@ export default function AboutMe() {
                         </p>
                     </FadeIn>
                 </div>
-                <Skills />
+                <div className="w-full lg:w-auto">
+                    <Skills />
+                </div>
             </div>
-            <FadeIn>
-                <Button
-                    text="Contact Me"
-                    onClick={() => console.log("clicked")}
-                />
-            </FadeIn>
         </div>
     );
 }

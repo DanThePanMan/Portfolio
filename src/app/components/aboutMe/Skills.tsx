@@ -25,8 +25,8 @@ import {
     GithubOriginal,
     VercelOriginal,
     NodejsOriginal,
-    FlaskOriginal,
     AzureOriginal,
+    DockerOriginal,
 } from "devicons-react";
 import { h2Style } from "../../Styles/Styles";
 import { FadeIn } from "../universal/FadeIn";
@@ -35,11 +35,11 @@ import { FadeIn } from "../universal/FadeIn";
 
 const Skills = () => {
     return (
-        <div className="flex flex-col gap-8 items-start justify-start basis-[35%]">
+        <div className="flex flex-col gap-6 lg:gap-8 items-start justify-start w-full lg:basis-[35%] lg:flex-shrink-0">
             <FadeIn>
                 <h2 className={h2Style}>My Skills</h2>
             </FadeIn>
-            <FadeIn addedStyles=" flex-grow self-stretch">
+            <FadeIn addedStyles="flex-grow self-stretch w-full">
                 <TechCard text="Languagues">
                     <SkillIcon name="HTML" id="html" className="bg-[#e44d2650]">
                         <Html5Original size="25" />
@@ -71,7 +71,7 @@ const Skills = () => {
                 </TechCard>
             </FadeIn>
 
-            <FadeIn addedStyles=" flex-grow self-stretch">
+            <FadeIn addedStyles="flex-grow self-stretch w-full">
                 <TechCard text="Frameworks and Libraries">
                     <SkillIcon
                         name="React"
@@ -117,7 +117,7 @@ const Skills = () => {
                     </SkillIcon>
                 </TechCard>
             </FadeIn>
-            <FadeIn addedStyles=" flex-grow self-stretch">
+            <FadeIn addedStyles="flex-grow self-stretch w-full">
                 <TechCard text="Technologies">
                     <SkillIcon name="git" id="git" className="bg-[#f89e3850]">
                         <GitOriginal size="25" />
@@ -239,6 +239,12 @@ const Skills = () => {
                                 fill="#352D8E"
                             />
                         </svg>
+                    </SkillIcon>
+                    <SkillIcon
+                        name="Docker"
+                        id="docker"
+                        className="transition-all  bg-[#5b9ff850]">
+                        <DockerOriginal size="25" />
                     </SkillIcon>
                 </TechCard>
             </FadeIn>

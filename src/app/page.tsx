@@ -4,6 +4,8 @@ import { FadeIn } from "./components/universal/FadeIn";
 import { HeroHighlight } from "./components/HeroHighlight/HeroHighlight";
 import { TitleCard } from "./components/HeroHighlight/TitleCard";
 import { TitleToBody } from "./components/TitleToBody";
+import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { useEffect, useState } from "react";
@@ -30,12 +32,12 @@ export default function Home() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 1 }}
-                        className="fixed inset-0 bg-black z-50 flex items-center justify-center pointer-events-none">
+                        className="fixed inset-0 bg-black z-50 flex items-center justify-center pointer-events-none px-4">
                         <motion.h1
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}
-                            className="text-6xl font-bold text-white">
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center">
                             Welcome to my space.
                         </motion.h1>
                     </motion.div>
@@ -51,9 +53,9 @@ export default function Home() {
             <FadeIn>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="64"
-                    height="64"
-                    className="fill-black dark:fill-white absolute bottom-0 left-0 right-0 mx-auto mb-4 animate-bounce"
+                    width="48"
+                    height="48"
+                    className="fill-black dark:fill-white absolute bottom-0 left-0 right-0 mx-auto mb-4 animate-bounce sm:w-16 sm:h-16"
                     viewBox="0 0 16 16">
                     <path
                         fillRule="evenodd"
@@ -64,8 +66,18 @@ export default function Home() {
             <TitleToBody />
             <div
                 id="about"
-                className="p-32 flex flex-col justify-start items-center w-[100%] scroll-mt-16">
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16">
                 <AboutMe />
+            </div>
+            <div
+                id="projects"
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-black">
+                <Projects />
+            </div>
+            <div
+                id="contact"
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-black">
+                <Contact />
             </div>
         </>
     );
