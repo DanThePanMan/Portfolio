@@ -66,17 +66,17 @@ export default function Home() {
             <TitleToBody />
             <div
                 id="about"
-                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16">
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-white dark:bg-black">
                 <AboutMe />
             </div>
             <div
                 id="projects"
-                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-black">
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-gray-50 dark:bg-black">
                 <Projects />
             </div>
             <div
                 id="contact"
-                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-black">
+                className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 flex flex-col justify-start items-center w-full scroll-mt-16 bg-white dark:bg-black">
                 <Contact />
             </div>
         </>

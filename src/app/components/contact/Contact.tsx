@@ -61,10 +61,10 @@ const Contact = () => {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                     className="text-center mb-12 lg:mb-16">
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 lg:mb-6">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black dark:text-white mb-4 lg:mb-6">
                         Get In Touch
                     </h2>
-                    <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                    <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
                         I&apos;m always interested in new opportunities and
                         exciting projects. Whether you have a question, want to
                         collaborate, or just want to say hello, feel free to
@@ -84,10 +84,10 @@ const Contact = () => {
                             viewport={{ once: true }}
                             className="text-center space-y-6 lg:space-y-8">
                             <div>
-                                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 lg:mb-6">
+                                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-black dark:text-white mb-4 lg:mb-6">
                                     Let&apos;s Connect
                                 </h3>
-                                <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 lg:mb-12 max-w-2xl mx-auto">
+                                <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed mb-8 lg:mb-12 max-w-2xl mx-auto">
                                     I&apos;m currently a Computer Science student at
                                     the University of Ottawa. I&apos;m passionate
                                     about full-stack development, data engineering,
@@ -118,15 +118,15 @@ const Contact = () => {
                                             delay: index * 0.1,
                                         }}
                                         viewport={{ once: true }}
-                                        className="flex flex-col items-center gap-4 p-6 bg-gray-800/30 rounded-2xl border border-gray-700 hover:border-indigo-400 hover:bg-gray-800/50 transition-all duration-300 group min-h-[180px]">
-                                        <div className="w-16 h-16 bg-indigo-400 rounded-xl flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-indigo-500 transition-all duration-300 flex-shrink-0">
+                                        className="flex flex-col items-center gap-4 p-6 bg-white/80 dark:bg-gray-800/30 rounded-2xl border border-gray-300 dark:border-gray-700 hover:border-indigo-500 dark:hover:border-indigo-400 hover:bg-white dark:hover:bg-gray-800/50 transition-all duration-300 group min-h-[180px] shadow-sm hover:shadow-md">
+                                        <div className="w-16 h-16 bg-indigo-500 dark:bg-indigo-400 rounded-xl flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-indigo-600 dark:group-hover:bg-indigo-500 transition-all duration-300 flex-shrink-0">
                                             {item.icon}
                                         </div>
                                         <div className="text-center w-full">
-                                            <p className="text-gray-400 text-sm mb-2">
+                                            <p className="text-gray-500 dark:text-gray-400 text-sm mb-2">
                                                 {item.label}
                                             </p>
-                                            <p className="text-white font-semibold text-base break-words leading-tight">
+                                            <p className="text-gray-900 dark:text-white font-semibold text-base break-words leading-tight">
                                                 {item.value}
                                             </p>
                                         </div>
@@ -135,11 +135,11 @@ const Contact = () => {
                             </div>
 
                             <div className="pt-8">
-                                <p className="text-gray-400 text-sm mb-4">
+                                <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
                                     Currently based in:
                                 </p>
                                 <div className="flex items-center justify-center gap-3">
-                                    <div className="w-8 h-8 bg-indigo-400 rounded-full flex items-center justify-center">
+                                    <div className="w-8 h-8 bg-indigo-500 dark:bg-indigo-400 rounded-full flex items-center justify-center">
                                         <svg
                                             className="w-4 h-4 text-white"
                                             fill="none"
@@ -159,7 +159,7 @@ const Contact = () => {
                                             />
                                         </svg>
                                     </div>
-                                    <span className="text-white font-semibold text-lg">
+                                    <span className="text-gray-900 dark:text-white font-semibold text-lg">
                                         Ottawa, Ontario, Canada
                                     </span>
                                 </div>

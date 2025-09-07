@@ -15,10 +15,10 @@ export const TitleCard = () => {
                 </h1>
             </div>
             <div className="mt-2 sm:mt-4 max-w-full overflow-hidden">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-t from-zinc-600 to-black dark:from-zinc-400 dark:to-white dark:text-transparent inline-block bg-clip-text">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-t from-zinc-600 to-black dark:from-zinc-400 dark:to-white dark:text-transparent inline-block bg-clip-text whitespace-nowrap">
                     a{" "}
                     <FlipWords
-                        className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-blue-500"
+                        className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-blue-500 whitespace-nowrap pb-4"
                         words={[
                             "Full-stack Developer",
                             "Mobile Developer",
