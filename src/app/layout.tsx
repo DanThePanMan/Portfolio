@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Daniel Chen - Portfolio",
-    description: "Full-stack developer passionate about creating innovative solutions",
+    description:
+        "Full-stack developer passionate about creating innovative solutions",
 };
 
 export default function RootLayout({

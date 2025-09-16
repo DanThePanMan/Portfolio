@@ -30,14 +30,14 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 
     if (images.length === 0) {
         return (
-            <div className="relative bg-gray-200 dark:bg-gray-800 rounded-lg p-4 sm:p-6 lg:p-8 h-48 sm:h-56 md:h-64 flex items-center justify-center border border-gray-300 dark:border-gray-700">
+            <div className="relative bg-gray-800 rounded-lg p-4 sm:p-6 lg:p-8 h-48 sm:h-56 md:h-64 flex items-center justify-center border border-gray-700">
                 <div className="text-center">
-                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-indigo-500 dark:bg-indigo-400 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-indigo-400 rounded-full mx-auto mb-3 sm:mb-4 flex items-center justify-center">
                         <span className="text-lg sm:text-2xl font-bold text-white">
                             {projectTitle.charAt(0)}
                         </span>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+                    <p className="text-gray-400 text-sm sm:text-base">
                         Project Preview
                     </p>
                 </div>
@@ -47,7 +47,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 
     return (
         <div className="relative group">
-            <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700">
+            <div className="relative h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 rounded-lg overflow-hidden bg-gray-900 border border-gray-700">
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={currentIndex}
@@ -75,7 +75,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                     <>
                         <button
                             onClick={prevImage}
-                            className="absolute left-1 sm:left-2 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white/90 dark:hover:bg-black/70 text-gray-900 dark:text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 shadow-lg">
+                            className="absolute left-1 sm:left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                             <svg
                                 className="w-4 h-4 sm:w-5 sm:h-5"
                                 fill="none"
@@ -91,7 +91,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                         </button>
                         <button
                             onClick={nextImage}
-                            className="absolute right-1 sm:right-2 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-black/50 hover:bg-white/90 dark:hover:bg-black/70 text-gray-900 dark:text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 shadow-lg">
+                            className="absolute right-1 sm:right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                             <svg
                                 className="w-5 h-5"
                                 fill="none"
@@ -117,8 +117,8 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
                                 onClick={() => goToImage(index)}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                     index === currentIndex
-                                        ? "bg-indigo-500 dark:bg-indigo-400 w-6"
-                                        : "bg-gray-600/70 dark:bg-white/50 hover:bg-gray-800/90 dark:hover:bg-white/80"
+                                        ? "bg-indigo-400 w-6"
+                                        : "bg-white/50 hover:bg-white/80"
                                 }`}
                             />
                         ))}
@@ -127,7 +127,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({
 
                 {/* Image counter */}
                 {images.length > 1 && (
-                    <div className="absolute top-4 right-4 bg-white/90 dark:bg-black/50 text-gray-900 dark:text-white text-sm px-2 py-1 rounded z-10 shadow-lg">
+                    <div className="absolute top-4 right-4 bg-black/50 text-white text-sm px-2 py-1 rounded z-10">
                         {currentIndex + 1} / {images.length}
                     </div>
                 )}

@@ -88,10 +88,11 @@ const Contact = () => {
                                     Let&apos;s Connect
                                 </h3>
                                 <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed mb-8 lg:mb-12 max-w-2xl mx-auto">
-                                    I&apos;m currently a Computer Science student at
-                                    the University of Ottawa. I&apos;m passionate
-                                    about full-stack development, data engineering,
-                                    and building innovative solutions. Feel free to reach
+                                    I&apos;m currently a Computer Science
+                                    student at the University of Ottawa.
+                                    I&apos;m passionate about full-stack
+                                    development, data engineering, and building
+                                    innovative solutions. Feel free to reach
                                     out!
                                 </p>
                             </div>

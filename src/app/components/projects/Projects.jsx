@@ -67,9 +67,28 @@ const Projects = () => {
         },
         {
             id: 4,
+            title: "Gunpla Hub",
+            description:
+                "A full-stack social media platform for Gundam model (Gunpla) enthusiasts. Features user authentication with JWT, real-time social feed for sharing builds, media uploads with Supabase storage, and a responsive UI. Built with React frontend and Express backend with PostgreSQL database.",
+            technologies: [
+                "React.js",
+                "Express.js",
+                "Node.js",
+                "PostgreSQL",
+                "Prisma ORM",
+                "JWT",
+                "Tailwind CSS",
+                "Supabase",
+            ],
+            githubUrl: "https://github.com/DanThePanMan/gunpla-hub",
+            liveUrl: "#",
+            images: ["/projects/gunplahub.png"],
+        },
+        {
+            id: 5,
             title: "Portfolio Website",
             description:
-                "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, a clean dark theme design, and showcases my development skills and projects.",
+                "A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, automatic light/dark mode following system preferences, and showcases my development skills and projects.",
             technologies: [
                 "Next.js",
                 "TypeScript",
